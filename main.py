@@ -9,11 +9,8 @@ import telethon
 from telethon import TelegramClient, events, sync
 import subprocess
 import os
-import pyttsx3
 from datetime import datetime
-#import variables #other variables code
-#import connect_to_chain #blockchain connection code
-#import buy #other buy code
+
 
 
 #========================= HAM KET NOI LANG NGHE Telegram =========================
@@ -55,9 +52,6 @@ soluongbuy=float(input("Nhap so luong snip BNB: "))
 value = web3.toWei(soluongbuy, 'ether')
 gasPrice = web3.toWei('18', 'gwei')
 nonce = web3.eth.get_transaction_count('0x621391240da27b36B7dBfcFa2667eA60Bf722021')
-eng = pyttsx3.init()
-voice = eng.getProperty("voices")
-eng.setProperty("voice", voice[1].id)
 url = "https://poocoin.app/tokens/"
 #soluongLiquidity=int(input("So luong Liquidity: "))
 #test chanel ChinaRoyal  CMC_fastest_alerts
@@ -99,9 +93,7 @@ async def normal_handler(event):
             #os.system("start Bot_Canh_Gia_Ban_Auto_checkgiaodong.py -ca " + contractAddress + " -tp " + str(soluongbuy))
             #os.system("start Bot_Ban_Ngay.cmd -ca " + contractAddress + " -tp " + str(soluongbuy))
             print("mo poocoinweb")
-            webbrowser.open_new(url + contractAddress)
-            eng.say("Coin Has been bought")
-            eng.runAndWait()
+            #webbrowser.open_new(url + contractAddress)
         else:
             print("Da phat hien Liquidity cao hon 130 khong tien hanh mua: "+str(Liquidity3))
 client.start()
