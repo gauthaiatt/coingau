@@ -12,6 +12,8 @@
 
 # modify
 0.0.0.0 udc.yahoo.com
+0.0.0.0 udc.yahoo.com
+0.0.0.0 *.yahoo.com
 0.0.0.0 udcm.yahoo.com
 0.0.0.0 api.bugsnag.com
 0.0.0.0 app.bugsnag.com
