@@ -11,6 +11,12 @@
 # =====================================================
 
 # modify
+0.0.0.0 udc.yahoo.com
+0.0.0.0 udcm.yahoo.com
+0.0.0.0 api.bugsnag.com
+0.0.0.0 app.bugsnag.com
+0.0.0.0 browser.sentry-cdn.com
+0.0.0.0 app.getsentry.com
 0.0.0.0 new188.vip
 0.0.0.0 *.vip
 0.0.0.0 iwin.net
