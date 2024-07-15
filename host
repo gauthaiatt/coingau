@@ -11,6 +11,7 @@
 # =====================================================
 
 # modify
+0.0.0.0 advertising-api-eu.amazon.com
 0.0.0.0 udc.yahoo.com
 0.0.0.0 udc.yahoo.com
 0.0.0.0 *.yahoo.com
